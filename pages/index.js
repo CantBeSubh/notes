@@ -68,9 +68,9 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.header}>
           <h1>NOTES</h1>
-          <label class="switch">
-            <input type="checkbox" onClick={() => { setDarkMode(!darkMode) }} checked={!darkMode} />
-            <span class="slider round"></span>
+          <label className="switch">
+            <input type="checkbox" onChange={() => { setDarkMode(!darkMode) }} checked={!darkMode} />
+            <span className="slider round"></span>
           </label>
         </div>
         <Search handleSearchNote={setSearchText} />
