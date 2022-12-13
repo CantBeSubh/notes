@@ -7,7 +7,7 @@ export const Note = ({ id, text, date, handleDeleteNote }) => {
             <div className={styles.noteFooter}>
                 <small>{date}</small>
                 <i
-                    class="fa fa-trash delete-icon"
+                    className="fa fa-trash delete-icon"
                     aria-hidden="true"
                     onClick={() => handleDeleteNote(id)}
                 />

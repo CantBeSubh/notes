@@ -13,12 +13,12 @@ export default function Home() {
     {
       id: nanoid(),
       text: "This is my first note!",
-      date: "15/04/2021",
+      date: "15/12/2022",
     },
     {
       id: nanoid(),
       text: "This is my second note!",
-      date: "21/04/2021",
+      date: "21/12/2022",
     },
   ]);
 
@@ -67,15 +67,11 @@ export default function Home() {
 
       <main className={styles.container}>
         <div className={styles.header}>
-          <h1>Notes</h1>
-          <button
-            onClick={() => {
-              setDarkMode(!darkMode);
-            }}
-            className="save"
-          >
-            Toggle Mode
-          </button>
+          <h1>NOTES</h1>
+          <label class="switch">
+            <input type="checkbox" onClick={() => { setDarkMode(!darkMode) }} checked={!darkMode} />
+            <span class="slider round"></span>
+          </label>
         </div>
         <Search handleSearchNote={setSearchText} />
         <NotesList
