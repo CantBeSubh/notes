@@ -7,7 +7,7 @@ import { Search } from "../components/Search.js";
 
 export default function Home() {
   const [searchText, setSearchText] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const [notes, setNotes] = useState([
     {
@@ -66,7 +66,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.container}>
-        <div className="header">
+        <div className={styles.header}>
           <h1>Notes</h1>
           <button
             onClick={() => {
